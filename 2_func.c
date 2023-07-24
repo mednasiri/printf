@@ -2,14 +2,14 @@
 
 /**
  * prt_ptr -a function that Prints the value of a pointer variable
- * 
+ *
  * @types: arg 1 List a of args
  * @buffer:arg 2 the arr to handle prt
  * @flags:arg 3 Calculs active flags
  * @width:arg 4 width
  * @precision: arg 5 the precis specif
  * @size: arg 6 size specif of output
- * 
+ *
  * Return: Number of chars printed.
  */
 
@@ -54,15 +54,15 @@ int prt_ptr(va_list types, char buffer[],
 
 
 /**
- * prt_non_print -a function that  prints ASCII codes in hexa of non printable chars
- * 
+ * prt_non_print -function to prints ASCII codes in hexa of non printable chars
+ *
  * @types:arg 1 List of args
  * @buffer:arg 2 buffer arr to handle prt
  * @flags: arg 3 Calcul active flags
  * @width: arg 4 width
  * @precision: arg 5 precis specif
  * @size:arg 6  Size specif
- * 
+ *
  * Return: Nbr of characters printed
  */
 int prt_non_print(va_list types, char buffer[],
@@ -139,14 +139,14 @@ int prt_reverse(va_list types, char buffer[],
 
 /**
  * prt_rot13string -a function Print a string usint the rot13.
- * 
+ *
  * @types:arg 1 the list of args
  * @buffer:arg 2 the arr to handle print
  * @flags: arg 3 Calcul the active flags
  * @width:arg 4  width
  * @precision:arg 5 the Precis specif
  * @size:arg 6 the Size specif
- * 
+ *
  * Return: Nbrs of charachters printed
  */
 int prt_rot13string(va_list types, char buffer[],

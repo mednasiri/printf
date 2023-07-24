@@ -88,7 +88,7 @@ int prt_hexadec(va_list types, char buffer[],
 
 
 /**
- * prt_hexa_up - a function that prts an unsigned nbr in upper hexadecimal notation
+ * prt_hexa_up - function to  prts unsigned nbr in upper hexadecimal notation
  *
  * @types:arg 1 list of arguments that may be provided to the function
  * @buffer:arg 2 arr used to handle the characters to be printed
