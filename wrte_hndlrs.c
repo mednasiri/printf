@@ -78,7 +78,7 @@ int write_nber(int is_negative, int ind, char buffer[],
  * @buffer:arg 2 Buff
  * @flags:arg 3 Flags
  * @width:arg 4 width
- * @prec:arg 5 Precis specif
+ * @precsion:arg 5 Precis specif
  * @length:arg 6 Nbr length
  * @padd:arg 7 Padding char
  * @extra_c:arg 8 xtr char
@@ -86,18 +86,18 @@ int write_nber(int is_negative, int ind, char buffer[],
  * Return: nbr of printed characters.
  */
 int write_numer(int ind, char buffer[],
-		int flags, int width, int precision,
+		int flags, int width, int precsion,
 		int length, char padd, char extra_c)
 {
 	int s, padding_start = 1;
 
-	if (precision == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0' && width == 0)
+	if (precsion == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0' && width == 0)
 		return (0);
-	if (precision == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0')
+	if (precsion == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0')
 		buffer[ind] = padd = ' ';
-	if (precision > 0 && precision < length)
+	if (precsion > 0 && precsion < length)
 		padd = ' ';
-	while (precision > length)
+	while (precsion > length)
 		buffer[--ind] = '0', length++;
 	if (extra_c != 0)
 		length++;

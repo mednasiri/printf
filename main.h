@@ -129,7 +129,7 @@ int flags, int width, int precision, int size);
 int write_nber(int is_negative, int ind, char buffer[],
 int flags, int width, int precision, int size);
 
-int write_numer(int ind, char buffer[], int flags, int width, int precision,
+int write_numer(int ind, char buffer[], int flags, int width, int precsion,
 int length, char padd, char extra_c);
 
 int write_ptr(char buffer[], int ind, int leng,
